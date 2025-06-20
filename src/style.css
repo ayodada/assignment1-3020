@@ -38,15 +38,11 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #E3EEB2;
-}
-
 /* Contact button */
 
 .contact-btn {
-    background-color: #4CAF50; /* Green background */
-    color: white;              /* White text */
+    background-color: #4CAF50;
+    color: white;
     padding: 12px 24px;
     border: none;
     border-radius: 6px;
@@ -56,7 +52,7 @@ nav ul li a:hover {
 }
 
 .contact-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
 
 /* Headings */
@@ -85,10 +81,10 @@ width:40px;
 length:40px;
 }
 .footer-bottom {
-    background: #303036;
-    color: #d3d3d3
-    height: 5px;
+    background: black;
+    color: white;
+    height: 0px;
     text-align: center;
-    padding: 2px;
+    padding: 40px;
     width: 100%;
 }
