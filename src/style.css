@@ -38,6 +38,9 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: black;
+}
 /* Contact button */
 
 .contact-btn {
