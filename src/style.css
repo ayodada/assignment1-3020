@@ -34,12 +34,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #6a4e42;
+    color: #E3EEB2;
 }
 
 /* Headings */
@@ -49,6 +49,12 @@ h1, h2, h3 {
 }
 
 /* Footer */
+
+footer{
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
 .footer-box{
     text-align:center;
     background: #819A91;
@@ -67,6 +73,5 @@ length:40px;
     height: 5px;
     text-align: center;
     padding: 2px;
-    position: relative;
     width: 100%;
 }
