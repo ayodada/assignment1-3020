@@ -47,6 +47,10 @@ h1, h2, h3 {
 }
 
 /* Footer */
+.logo {
+width:40px;
+length:40px;
+}
 .footer {
     background: #303036;
     color: #d3d3d3
