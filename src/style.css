@@ -15,7 +15,9 @@ body {
 nav {
     background-color: #7F8CAA;
     width: 100%;
-    padding: 20px 0;
+    padding: 13px 0;
+    position: fixed;
+    top: 0;
 }
 
 nav ul {
@@ -47,17 +49,24 @@ h1, h2, h3 {
 }
 
 /* Footer */
+.footer-box{
+    text-align:center;
+    background: #819A91;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+
+}
 .logo {
 width:40px;
 length:40px;
 }
-.footer {
+.footer-bottom {
     background: #303036;
     color: #d3d3d3
-    height: 100px
+    height: 5px;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     position: relative;
-    bottom: 0;
     width: 100%;
 }
