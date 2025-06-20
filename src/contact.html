@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>Contact Us - Ayo & Precious</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Center the form */
+        .b-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 80vh;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        form p {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,28 +47,32 @@
 <!-- Contact Content -->
 <h1>Contact Us</h1>
 
-<form action="#" method="post">
-    <p>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name">
-    </p>
-    <p>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email">
-    </p>
-    <p>
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject">
-    </p>
-    <p>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea>
-    </p>
-</form>
+    <form action="#" method="post">
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject">
+        </p>
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </p>
+    </form>
+
 </div>
 
 <!-- Footer -->
-<footer style="position: absolute;">
+<footer style="position: absolute; bottom = 0;">
     <section class = "footer-box">
         <img class = "logo" src="https://www.svgrepo.com/show/506668/instagram.svg" alt="Instagram">
         <img class = "logo" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
