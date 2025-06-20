@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Artemis</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Center the form */
+        .b-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 80vh;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        form p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class = "b-content">
+<!-- Contact Content -->
+<h1>Contact Us</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject">
+        </p>
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </p>
+    </form>
+
+</div>
+
+<!-- Footer -->
+<footer style="position: absolute; bottom: 0;">
+    <section class = "footer-box">
+        <img class = "logo" src="https://www.svgrepo.com/show/506668/instagram.svg" alt="Instagram">
+        <img class = "logo" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
+        <img class = "logo" src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png" alt="Twitter">
+    </section>
+
+    <section class = "footer-bottom">
+        <p>&copy; 2025 Ayo & Precious Clothes. All rights reserved.</p>
+    </section>
+</footer>
+
+</body>
+</html>
