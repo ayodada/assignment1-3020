@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <title>Our Products - Ayo & Precious</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-card p {
+            padding: 0 15px;
+            line-height: 1.5;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin: 10px 0 20px;
+            padding: 10px 20px;
+            background-color: #7F8CAA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,40 +67,112 @@
     </ul>
 </nav>
 
-<div class = "b-content">
 <!-- Products Content -->
-<h1>Our Products</h1>
+<div class="b-content">
+    <h1>Our Products</h1>
+    <h2>Featured Items</h2>
 
-<h2>Featured Items</h2>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRV180xI56hSiIsXsw-79tFkvHPN1nVtnagEpKxK_eRuA2KdaxagFJggrHMIJe70jZ_Sa18FvtT5PE-o3oCSmfRH2HODmra82kpgjLEf-SWwerjM8IrgVzrmg" alt="Classic Ankara Shirt">
+            <h3> Ankara Trousers</h3>
+            <p class="price">$54.00</p>
+            <p>Blending tradition with sleek modern style.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
 
-<ul>
-    <li>
-        <h3>Classic Ankara Shirt</h3>
-        <p>A modern twist on a traditional look, made with premium fabric.</p>
-        <p><a href="#">Buy Now</a></p>
-    </li>
-    <li>
-        <h3>Embroidered Hoodie</h3>
-        <p>Stylish and comfortable, perfect for everyday wear.</p>
-        <p><a href="#">Buy Now</a></p>
-    </li>
-    <li>
-        <h3>Festival Wrap Skirt</h3>
-        <p>Vibrant patterns and breathable material — ideal for summer.</p>
-        <p><a href="#">Buy Now</a></p>
-    </li>
-</ul>
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTXSSxW_FZm8nQA7uJK3mXAi8F61IpAfQgrwBqyZn5M1D-_BMjugWf0Kzg_3zQFoFrXQxsaxXXcQULavRH3Ug6xAue6utz0cmPk0GMvS8c" alt="Embroidered Hoodie">
+            <h3>Embroidered Skirt</h3>
+            <p class="price">$148.00</p>
+            <p>Comfortable and detailed with heritage embroidery.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQVqH3U6sxYTwyRrmG8Lblem5cerxxYuf3elDDG8-VlQ8w7hTOdRDF0j8m7mPHsjpGclLsBqFi270_wIqx3mbk6D6KLDsZjffkbFx7ZVao" alt="Festival Wrap Skirt">
+            <h3>Festival Wrap Dress</h3>
+            <p class="price">$212.00</p>
+            <p>Light, bright, and ready for any summer vibe.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS3ZKwpOzjw5OUnOQRzhmJIoAcV3pZE37rN9ny2Y1_fvpTW9QxKwmgKrxIpP4dzo125_KqNQIlpcx9SOFdGfWkvb7GN7VgLlkwbUAlElJIt" alt="Bold Blazer">
+            <h3>Bold Dress</h3>
+            <p class="price">$223.00</p>
+            <p>Sharp tailoring with Afro-Euro influence.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQEA-w_PJTj8LEbWnNMmE-ULlQaSanXqI6jfjGryWi_WD4VevpSunDxMW3VGEJ-7Z2IZCbFEYqm29KvS5HXWRALkvJZn6RcDkATaM1wHO4RjxLqNOydK8h97g" alt="Cropped Ankara Jacket">
+            <h3>Ball Dress</h3>
+            <p class="price">$109.00</p>
+            <p>Perfect for layering, lightweight and bold.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRLOPxre5zf2KlvR-ZJYm8MKbGxIJQAQ5WaR0CAMVd4Jr4UUxU7wkWBoDZaRnXX7c9MBZHrQoMg4Sq2_ufXXyS0itDYg0Nq-VfqHWjNG5weGoQmccW6G-ug8A" alt="Heritage Trousers">
+            <h3>Heritage Shirt</h3>
+            <p class="price">$189.00</p>
+            <p>Wide-leg pants crafted from heritage patterns.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTycseXNeUuyW_rRvpznww7hEbNwPYr-OtUhwJD-H4IE3MxFRBGiD9ejVX7ypU5qUQ2VXYNkPVWgkgu1kqtbox8xjWBu7MRjAkzZtCpk9s" alt="Afro-Fusion Maxi Dress">
+            <h3>Afro-Fusion Jumpsuit</h3>
+            <p class="price">$99.00</p>
+            <p>Elegant, flowing, and culturally empowered.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR8DhMgiFlVAU17xKufPSdIobl19pfiluzAM4okF47DtRTmCQDeWPSqB1JvWRa91NSXV0Ih68SyZHQtAR_NgFRbPk9eZGFuH7NmNGzS-MZn" alt="Signature Hoodie">
+            <h3>Signature Two-piece</h3>
+            <p class="price">$85.00</p>
+            <p>Our signature logo embroidered with pride and precision.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src=" https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZCRDa802_uU9Df3-uN28ZzLOmbTnK0hghnzfyZsk3Femzxe92EEVUG1XBwg5-wlUoz1lTGuS4KEMsp8WTqwBuuRWq5x9tlc1l0UqDMqltaaFnLr3onazfIQ   " alt="Modern Afro dress">
+            <h3>  Royal men  </h3>
+            <p class="price">$129.00</p>
+            <p>Comfortable, breathable, and rooted in identity.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQS8ECm-RMhfL2gRdtGnOkqaNifhAx8y9qSIJRW3n6ZZl9Z7fXxc5JxH4QxYg0xibVtsXHi6LGRZx4en3ojeTz0k20IbOCqRubJq8IW1Nn0EN56UBRSd89y8sw " alt="Men's Attire">
+            <h3>Modern Afro Tee  </h3>
+            <p class="price">$250.00</p>
+            <p>Statement outerwear that honors history with every stitch.</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
 </div>
 
 <!-- Footer -->
 <footer>
-    <section class = "footer-box">
-        <img class = "logo" src="https://www.svgrepo.com/show/506668/instagram.svg" alt="Instagram">
-        <img class = "logo" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
-        <img class = "logo" src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png" alt="Twitter">
+    <section class="footer-box">
+        <img class="logo" src="https://www.svgrepo.com/show/506668/instagram.svg" alt="Instagram">
+        <img class="logo" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
+        <img class="logo" src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png" alt="Twitter">
     </section>
-
-    <section class = "footer-bottom">
+    <section class="footer-bottom">
         <p>&copy; 2025 Ayo & Precious Clothes. All rights reserved.</p>
     </section>
 </footer>
