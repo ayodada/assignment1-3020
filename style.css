@@ -133,6 +133,10 @@ footer {
     color: #ffcc70;
 }
 
+.dark-mode .service-box h3 {
+    color: #000 !important;
+}
+
 .dark-mode footer {
     background-color: #1e1e1e;
 }
