@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Toggle button not found.');
     }
 
-
+});         
 document.addEventListener('DOMContentLoaded', function() {
 const blogList = document.getElementById('blog-list');
 fetch('../data/posts.json')
