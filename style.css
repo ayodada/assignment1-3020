@@ -1,14 +1,14 @@
-  
 /* Global Styles */
 body {
     background-color: #e1e1dc;
+    color: #000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
 
-.b-content{
-    margin: 50px
+.b-content {
+    margin: 50px;
 }
 
 /* Navigation */
@@ -18,6 +18,7 @@ nav {
     padding: 13px 0;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -41,8 +42,24 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
 }
-/* Contact button */
 
+/* Toggle button */
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode #theme-toggle {
+    background-color: #555;
+    color: white;
+}
+
+/* Contact button */
 .contact-btn {
     background-color: #4CAF50;
     color: white;
@@ -61,80 +78,61 @@ nav ul li a:hover {
 /* Headings */
 h1, h2, h3 {
     text-align: center;
-    color: #000000;
+    color: #000;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #f1f1f1;
 }
 
 /* Footer */
-
-footer{
+footer {
     bottom: 0;
     position: relative;
     width: 100%;
 }
-.footer-box{
-    text-align:center;
+
+.footer-box {
+    text-align: center;
     background: #819A91;
     color: #686868;
     height: 50px;
     width: 100%;
+}
 
-}
 .logo {
-width:40px;
-height:40px;
+    width: 40px;
+    height: 40px;
 }
+
 .footer-bottom {
     background: black;
     color: white;
-    height: 0;
     text-align: center;
     padding: 40px;
     width: 100%;
 }
 
-/* Dark Mode (overrides) */
+/* Dark Mode (Overrides) */
 .dark-mode {
-    background-color: #121212; /* consistent dark background */
-    color: #f1f1f1; /* light text for readability */
+    background-color: #121212;
+    color: #f1f1f1;
 }
 
-/* Navigation */    
 .dark-mode nav {
     background-color: #1e1e1e;
 }
 
-/* Text elements */
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode p,
-.dark-mode li,
 .dark-mode a {
     color: #f1f1f1;
 }
 
-/* Link hover color */
 .dark-mode a:hover {
     color: #ffcc70;
-} 
-
-/* Toggle button */
-#theme-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    padding: 8px 12px;
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
 }
 
-.dark-mode #theme-toggle {
-    background-color: #555;
-    color: white;
-}
-
-/* Footer sections */
 .dark-mode footer {
     background-color: #1e1e1e;
 }
@@ -148,46 +146,31 @@ height:40px;
     background-color: #111;
     color: #dddddd;
 }
-    
-/* Headings */
-h1, h2, h3 {
-    text-align: center;
-    /* remove hardcoded black color */
-}
 
-/* Optional: apply default dark color to main body */
-body {
-    color: #000;
-}
-
-/* Override heading color ONLY in dark mode */
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3 {
-    color: #f1f1f1;
-}
-
-/* Keep body text light */
-.dark-mode {
-    background-color: #121212;
-    color: #f1f1f1;
-}
-
-/* Avoid turning everything light inside white boxes */
-.dark-mode .card,
-.dark-mode .service-box {
+/* Service Cards or Boxes */
+.service-box,
+.card {
     background-color: white;
-    color: #000;  /* make card text readable */
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* If you use .card or .service-box like this: */
 .service-box p,
 .card p {
-    color: #444;
+    color: #333;
+}
+
+.dark-mode .service-box,
+.dark-mode .card {
+    background-color: white;
+    color: #000;
 }
 
 .dark-mode .service-box p,
 .dark-mode .card p {
-    color: #000; /* or adjust to contrast */
-}
-   
+    color: #000;
+}  
