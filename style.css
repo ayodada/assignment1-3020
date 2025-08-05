@@ -10,7 +10,7 @@ body {
 .b-content {
     margin: 50px;
 }
-
+ 
 /* Navigation */
 nav {
     background-color: #7F8CAA;
@@ -115,7 +115,7 @@ footer {
     width: 100%;
 }
 
-/* Dark Mode (Overrides) */
+/* Dark Mode */
 .dark-mode {
     background-color: #121212;
     color: #f1f1f1;
@@ -147,52 +147,63 @@ footer {
     color: #dddddd;
 }
 
-/* Service Cards or Boxes */
+/* Product and Service Cards */
+.product-card,
 .service-box,
-.card {
+.testimonial-card,
+form {
     background-color: white;
     color: #000;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.product-card p,
 .service-box p,
-.card p {
+form p,
+.testimonial-card p {
     color: #333;
 }
 
-.dark-mode .service-box,
-.dark-mode .card {
-    background-color: white;
-    color: #000;
+.buy-btn {
+    background-color: #7F8CAA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
 }
 
-.dark-mode .service-box p,
-.dark-mode .card p {
-    color: #000;
-}  
-/* Ensure dark mode doesn't make white boxes unreadable */
+/* Contact Page Layout */
+form {
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+/* Dark Mode Overrides */
 .dark-mode .product-card,
 .dark-mode .service-box,
-.dark-mode form,
-.dark-mode .testimonial-card {
+.dark-mode .testimonial-card,
+.dark-mode form {
     background-color: #ffffff !important;
     color: #000000 !important;
     border: 1px solid #ccc;
 }
 
-/* Override internal styles if used inline */
 .dark-mode .product-card p,
 .dark-mode .service-box p,
-.dark-mode form p,
-.dark-mode .testimonial-card p {
+.dark-mode .testimonial-card p,
+.dark-mode form p {
     color: #000000 !important;
 }
 
-/* Ensure contact form inputs remain readable */
 .dark-mode input,
 .dark-mode textarea {
     background-color: #fff !important;
@@ -200,16 +211,7 @@ footer {
     border: 1px solid #aaa;
 }
 
-/* Keep headings consistent */
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3 {
-    color: #f1f1f1 !important;
-}
-
-/* Buy button in dark mode */
 .dark-mode .buy-btn {
     background-color: #7F8CAA !important;
     color: white !important;
-}   
-   
+}
