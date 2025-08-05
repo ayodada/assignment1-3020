@@ -1,24 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleBtn = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme');
+  // Theme toggle
+  const toggleBtn = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
 
-    if (currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  } else {
+    console.error('Toggle button not found.');
+  }
 
-    if (toggleBtn) {
-        toggleBtn.addEventListener('click', function () {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('theme', theme);
-        });
-    } else {
-        console.error('Toggle button not found.');
-    }
-
-        
-// Load blog posts if blog page is loaded
-document.addEventListener('DOMContentLoaded', function () {
+  // Load blog posts
   const blogList = document.getElementById('blog-list');
   if (blogList) {
     fetch('data/posts.json')
@@ -38,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(error => console.error('Error loading blog posts:', error));
   }
 
-   document.addEventListener('DOMContentLoaded', function () {
   // Load header
   fetch('header.html')
     .then(response => response.text())
@@ -53,5 +50,3 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('footer').innerHTML = data;
     });
 });
-   
-   
