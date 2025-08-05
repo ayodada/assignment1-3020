@@ -1,9 +1,9 @@
- document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme');
 
     if (currentTheme === 'dark') {
-        document.bo dy.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
     }
 
     toggleBtn.addEventListener('click', function () {
@@ -17,4 +17,4 @@
         }
     });
 });
-          
+  
