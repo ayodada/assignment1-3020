@@ -149,3 +149,45 @@ height:40px;
     color: #dddddd;
 }
     
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    /* remove hardcoded black color */
+}
+
+/* Optional: apply default dark color to main body */
+body {
+    color: #000;
+}
+
+/* Override heading color ONLY in dark mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #f1f1f1;
+}
+
+/* Keep body text light */
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Avoid turning everything light inside white boxes */
+.dark-mode .card,
+.dark-mode .service-box {
+    background-color: white;
+    color: #000;  /* make card text readable */
+}
+
+/* If you use .card or .service-box like this: */
+.service-box p,
+.card p {
+    color: #444;
+}
+
+.dark-mode .service-box p,
+.dark-mode .card p {
+    color: #000; /* or adjust to contrast */
+}
+   
