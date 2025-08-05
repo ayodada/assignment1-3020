@@ -8,8 +8,7 @@
 
     toggleBtn.addEventListener('click', function () {
         document.body.classList.toggle('dark-mode');
-  const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-        localStorage.setItem('theme', theme);  
+
         // Save preference
         if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('theme', 'dark');
