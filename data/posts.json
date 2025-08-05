@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Adding Light/Dark Mode",
+    "date": "2025-08-01",
+    "content": "I implemented a light/dark mode toggle by writing a function in JavaScript that toggles a class on the body tag."
+  },
+  {
+    "title": "Building a Dynamic Blog Page",
+    "date": "2025-08-04",
+    "content": "I used fetch() to load JSON blog data and insert it dynamically into the page using JavaScript."
+  }
+]
+   
