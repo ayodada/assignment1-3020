@@ -174,3 +174,41 @@ footer {
 .dark-mode .card p {
     color: #000;
 }  
+/* Ensure dark mode doesn't make white boxes unreadable */
+.dark-mode .product-card,
+.dark-mode .service-box,
+.dark-mode form,
+.dark-mode .testimonial-card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #ccc;
+}
+
+/* Override internal styles if used inline */
+.dark-mode .product-card p,
+.dark-mode .service-box p,
+.dark-mode form p,
+.dark-mode .testimonial-card p {
+    color: #000000 !important;
+}
+
+/* Ensure contact form inputs remain readable */
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #aaa;
+}
+
+/* Keep headings consistent */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #f1f1f1 !important;
+}
+
+/* Buy button in dark mode */
+.dark-mode .buy-btn {
+    background-color: #7F8CAA !important;
+    color: white !important;
+}   
