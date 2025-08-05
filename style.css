@@ -10,7 +10,7 @@ body {
 .b-content {
     margin: 50px;
 }
- 
+
 /* Navigation */
 nav {
     background-color: #7F8CAA;
@@ -166,6 +166,14 @@ form p,
     color: #333;
 }
 
+.card-text {
+    line-height: 1.6;
+}
+
+.dark-mode .card-text {
+    color: #000 !important;
+}
+
 .buy-btn {
     background-color: #7F8CAA;
     color: white;
@@ -215,3 +223,4 @@ form p {
     background-color: #7F8CAA !important;
     color: white !important;
 }
+   
