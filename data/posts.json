@@ -1,13 +1,12 @@
 [
   {
-    "title": "Adding Light/Dark Mode",
-    "date": "2025-08-01",
-    "content": "I implemented a light/dark mode toggle by writing a function in JavaScript that toggles a class on the body tag."
+    "title": "Implementing the Light/Dark Mode Switcher (Part One)",
+    "date": "2025-08-04",
+    "content": "To create the light/dark mode feature, we added a toggle button to the header. We used JavaScript to add or remove a 'dark-mode' class from the body when the button is clicked. We used localStorage to remember the user’s theme preference, so it stays the same when they refresh or come back later. One tricky part was getting the toggle to work after loading the header dynamically — we fixed this by placing the JavaScript logic inside a function that runs after the header is loaded."
   },
   {
-    "title": "Building a Dynamic Blog Page",
+    "title": "Building the Dynamic Blog Section (Part Two)",
     "date": "2025-08-04",
-    "content": "I used fetch() to load JSON blog data and insert it dynamically into the page using JavaScript."
+    "content": "To avoid hardcoding blog posts, we created a posts.json file that stores blog post data. Then We used JavaScript to fetch that data and generate each blog post dynamically inside the blog page. Each post is wrapped in a div with a heading, date, and content. This setup makes it easy to update the blog — We just need to add a new object to the JSON file. We also used DOMContentLoaded to ensure the blog only loads when the blog.html page is active."
   }
 ]
-   
