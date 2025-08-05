@@ -92,20 +92,33 @@ height:40px;
     width: 100%;
 }
 
-/* Light mode (default) is already beige */
+/* Dark Mode (overrides) */
 .dark-mode {
-    background-color: #222;
+    background-color: #121212; /* consistent dark background */
+    color: #f1f1f1; /* light text for readability */
+}
+
+/* Navigation */    
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+/* Text elements */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li,
+.dark-mode a {
     color: #f1f1f1;
 }
 
-.dark-mode nav {
-    background-color: #333;
-}
+/* Link hover color */
+.dark-mode a:hover {
+    color: #ffcc70;
+} 
 
-.dark-mode footer {
-    background-color: #333;
-}
-
+/* Toggle button */
 #theme-toggle {
     position: absolute;
     top: 10px;
@@ -120,4 +133,19 @@ height:40px;
     background-color: #555;
     color: white;
 }
-   
+
+/* Footer sections */
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .footer-box {
+    background-color: #2a2a2a;
+    color: #cccccc;
+}
+
+.dark-mode .footer-bottom {
+    background-color: #111;
+    color: #dddddd;
+}
+    
